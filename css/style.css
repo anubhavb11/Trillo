@@ -16,7 +16,7 @@ Grey dark 3: #999
 
 */
 :root {
-  --c-p: #eb2f64;
+  --c-p: #fff;
   --c-p-l: #FF3366;
   --c-p-d: #BA265D;
   --c-g-l-1: #faf9f9;
@@ -28,7 +28,7 @@ Grey dark 3: #999
   --c-g-d-3: #999; }
 
 * {
-  margin: 0;
+  margin: 100rem;
   padding: 0; }
 
 *,
@@ -123,7 +123,7 @@ body {
     fill: var(--c-g-d-2); }
   .user-nav__user-photo {
     height: 3.75rem;
-    border-radius: 200rem; }
+    border-radius: 100rem; }
 
 .container {
   max-width: 120rem;
