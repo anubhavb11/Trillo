@@ -1,0 +1,138 @@
+// //////////////////////////////////////////
+////////////////  LOGO   ///////////////////
+.logo{
+    height: 3.25rem;
+    margin-left: 3rem; 
+}
+
+//////////////////////////////////////////
+////////////////  Search  ///////////////////
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%;
+    &__input{
+        font-family: inherit;
+        font-size: inherit;
+        background-color: var(--c-g-l-3);
+        border-radius: 200px;
+        padding: .9rem 2rem;
+        margin-right: -3.2rem;
+        width: 90%;
+        border: none;
+        transition: all .2s;
+        height: 4rem;
+
+        &:focus{
+            outline: none;
+            width: 100%;
+            background-color: var(--c-g-l-3);
+        }
+        &::placeholder{
+            font-size: 1.4rem;
+        }
+
+
+       
+
+    }
+
+    &__button{
+        border: none;
+        fill: var(--c-g-d-3);
+        &:active,
+        &:hover{
+            scale: (.1);
+            transform: translateY(2px);
+        }
+    }
+
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+
+    }
+
+
+}
+
+////////////////////////////////////////////////
+/////////////////////USER NAV ///////////////
+
+.user-nav{
+    display: flex; 
+    align-self: stretch;
+    align-items: center; 
+
+    & > *{
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &:hover{
+            background-color: var(--c-g-l-3 );
+        }
+    }
+
+
+
+    &__icon-box{
+      
+        position: relative;
+    }
+
+    &__notification{
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: var(--c-p);
+        position: absolute;
+        color: #fff;
+        top: 1.5rem;
+        right: 1.1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__user{
+        margin-right: 3rem;
+    }
+
+    &__user-name{
+        margin-left: .8rem;
+        font-size: 1.5rem;
+    }
+
+    &__icon{
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: var(--c-g-d-2);
+        
+    }
+
+
+    &__user-photo{
+        height: 3.75rem;
+        border-radius: 200rem;
+        
+
+    }
+
+    &__user-name{
+
+    }
+
+
+
+}
+
+
+

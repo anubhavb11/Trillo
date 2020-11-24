@@ -1,0 +1,57 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+:root{
+    --c-p: #eb2f64;
+    --c-p-l: #FF3366;
+    --c-p-d: #BA265D;
+    
+    --c-g-l-1: #faf9f9;
+    --c-g-l-2: #f4f2f2;
+    --c-g-l-3: #f0eeee;
+    --c-g-l-4: #ccc;
+    --c-g-d-1: #333;
+    --c-g-d-2: #777;
+    --c-g-d-3: #999;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--c-g-d-2);
+    background-image: linear-gradient(to right bottom,var(--c-p-l),var(--c-p-d));
+    background-size: cover;
+    min-height: 100vh;
+
+}
