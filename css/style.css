@@ -123,7 +123,7 @@ body {
     fill: var(--c-g-d-2); }
   .user-nav__user-photo {
     height: 3.75rem;
-    border-radius: 100rem; }
+    border-radius: 200rem; }
 
 .container {
   max-width: 120rem;
