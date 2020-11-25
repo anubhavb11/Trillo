@@ -330,6 +330,46 @@ body {
     font-family: inherit;
     padding: .2rem .1rem; }
 
+.cta {
+  text-align: center;
+  padding: 3rem; }
+  .cta__book-now {
+    font-size: 2.5rem;
+    padding: 2rem 2rem 3rem 2rem;
+    font-weight: 100; }
+
+.btn {
+  border-radius: 100px;
+  position: relative;
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(to right, var(--c-p-l), var(--c-p-d));
+  font-weight: 300;
+  padding: 1rem 5.5rem; }
+  .btn > * {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    transition: all .2s; }
+  .btn__visible {
+    padding: 1rem 1.5rem; }
+  .btn__invisble {
+    position: absolute;
+    left: 0;
+    top: -100%; }
+  .btn:hover {
+    background-image: linear-gradient(to left, var(--c-p-l), var(--c-p-d)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisble {
+    top: 35%; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
