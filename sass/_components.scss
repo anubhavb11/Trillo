@@ -301,3 +301,98 @@
 
 
 
+///////////////////////////////////////
+////////HOtel View
+
+
+
+.para{
+    padding: 2rem;
+}
+
+.mar-botm{
+    border-bottom: 2px solid var(--c-g-l-3);
+}
+
+.list{
+    padding: 2rem;
+    display: flex;
+    list-style: none;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--c-g-l-3);
+
+    // flex-direction: column;
+    &item{
+        flex: 0 0 50%;
+        margin-bottom: 1rem;
+       
+    }
+
+    &item::before{
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: .7rem;
+       
+        // OLD browser
+        //background-image: url(../img/SVG/chevron-thin-right.svg);
+        //background-size: cover;
+
+        // New 
+        background-color: var(--c-p);
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+
+        mask-image: url(../img/chevron-thin-right.svg);
+        mask-size: cover;
+        
+
+
+       
+    }
+}
+
+
+
+
+
+.recommend{
+    display: flex;
+    // justify-content: space-between;
+    padding: 2rem;
+     align-items: center;
+    &__count{
+        margin-right: auto;
+    }
+
+    &__friend{
+        
+
+    }
+
+    &__photo{
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+
+        &:not(:last-child){
+            margin-right: -1.8rem;
+        }
+        
+    }
+
+}
+
+
+.user-reviews{
+    flex: 1;
+}
+
+
+
+
+
