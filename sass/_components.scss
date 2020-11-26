@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     flex: 0 0 40%;
+   
     &__input{
         font-family: inherit;
         font-size: inherit;
@@ -138,6 +139,12 @@
     justify-content: space-between;   
     margin-top: 2.5rem; 
     // align-items: center;
+
+    @media only screen and (max-width: $bp-mid){
+        flex-direction: row;
+        margin-top: 0;
+        justify-content: space-evenly;
+    }
     &__item{
         padding: .5rem 2rem;
         position: relative;
@@ -196,6 +203,9 @@
     font-size: 1.2rem;
     padding: 1.7rem;
     text-align: center;
+    @media only screen and (max-width: $bp-mid){
+        display: none;
+    }
 }
 
 
@@ -363,6 +373,12 @@
     // justify-content: space-between;
     padding: 2rem;
      align-items: center;
+
+     @media only screen and (max-width: $bp-large){
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: space-between;
+     }
     &__count{
         margin-right: auto;
     }
@@ -393,7 +409,10 @@
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    &:not(:last-child){
+    align-items: stretch;
+    }
+
 
 }
 
@@ -407,8 +426,15 @@
     border-bottom: .5px solid rgba(1,1,1, .2);
     box-shadow:  0 .1rem 1rem rgba(1,1,1, .2);
     z-index: 1;
+    align-items: stretch;
+    justify-content: stretch;
     &:not(:last-child){
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-small){
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+        }
     }
 
     &__photo{
@@ -463,10 +489,16 @@
     &__btn{
         font-size: 1.2rem;
         display: inline-block;
-        // margin-left: 40%;
+        margin-left: 40%;
         margin-top: 10%;
         font-family: inherit;
         padding: .2rem .1rem;
+        // margin: auto;
+
+        @media only screen and (max-width: $bp-small){
+           margin-top: 3%;
+           margin-left: 45%;
+        }
        
     }
 
